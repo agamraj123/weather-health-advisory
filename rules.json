@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "id": "R1",
+      "title": "Data Privacy",
+      "description": "All datasets must exclude personally identifiable information (PII).",
+      "priority": "high"
+    },
+    {
+      "id": "R2",
+      "title": "Fairness",
+      "description": "Models must be tested across diverse datasets to avoid bias.",
+      "priority": "medium"
+    },
+    {
+      "id": "R3",
+      "title": "Transparency",
+      "description": "Each experiment must have clear documentation and reproducible steps.",
+      "priority": "high"
+    },
+    {
+      "id": "R4",
+      "title": "Sustainability",
+      "description": "Computational resources must be optimized to reduce energy usage.",
+      "priority": "low"
+    }
+  ]
+}
