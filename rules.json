@@ -1,35 +1,31 @@
 {
-  "asthma": {
-    "triggers": {
-      "aqi": ">150",
-      "humidity": ">80",
-      "temp_drop": ">5"
+  "rules": [
+    {
+      "id": "R1",
+      "title": "General Health",
+      "description": [
+        "Stay hydrated during hot days",
+        "Carry an umbrella in rain"
+      ],
+      "priority": "medium"
     },
-    "advisory": "High pollution detected — avoid outdoor activity, carry inhaler, wear N95 mask."
-  },
-  "sinusitis": {
-    "triggers": {
-      "temp_change": ">4",
-      "pollution": "high",
-      "weather": "cold_dry"
+    {
+      "id": "R2",
+      "title": "Asthma",
+      "description": [
+        "Avoid outdoor activity when AQI is high",
+        "Keep inhaler handy in dusty areas"
+      ],
+      "priority": "high"
     },
-    "advisory": "Sudden weather change may trigger sinus. Keep warm, use humidifier if indoors, cover nose outdoors."
-  },
-  "migraine": {
-    "triggers": {
-      "pressure_drop": ">4",
-      "temperature": ">35",
-      "uv_index": ">6"
-    },
-    "advisory": "Weather may trigger migraine. Stay hydrated, wear sunglasses, avoid long outdoor exposure."
-  },
-  "general": {
-    "triggers": {
-      "heatwave": ">38",
-      "aqi": ">120",
-      "rain": "heavy",
-      "humidity": ">85"
-    },
-    "advisory": "Today's weather may affect health. Drink water, avoid long outdoor time, keep umbrella/raincoat handy."
-  }
+    {
+      "id": "R3",
+      "title": "Sinus",
+      "description": [
+        "Wear a mask in dusty/smoky environments",
+        "Avoid sudden exposure to cold air"
+      ],
+      "priority": "high"
+    }
+  ]
 }
